@@ -1,10 +1,13 @@
 import requests
 import json
 
+#connection string
 stockurl = requests.get('https://buyvm.hasstock.net/api/stock.json')
 
+#pull data from connection string
 data = stockurl.text
 
+#convert to json format
 jsonparse = json.loads(data)
 
 #1GB Selectors
@@ -27,6 +30,8 @@ hasstock_1414 = jsonparse['1414']['hasStock']
 name_1424 = jsonparse['1424']['name']
 hasstock_1424 = jsonparse['1424']['hasStock']
 
+#prints the selectors
+#name is the location/size and hasstock is true or false
 print("1GB")
 print(name_1411,hasstock_1411)
 print(name_1413,hasstock_1413)
