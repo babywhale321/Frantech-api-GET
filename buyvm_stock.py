@@ -1,23 +1,38 @@
-#Import nessesary plugins
 import requests
 import json
 
-#linkurl variable is to get the stock.json page
-linkurl = requests.get("https://buyvm.hasstock.net/api/stock.json")
+stockurl = requests.get('https://buyvm.hasstock.net/api/stock.json')
 
-#Dumps the objects into jp variable
-jp = json.dumps('obj',indent=4)
+data = stockurl.text
 
-#jp is to be addresed to pt1 variable
-pt1 = jp
-pt2 = jp
-pt3 = jp
+jsonparse = json.loads(data)
 
-#uses linkurl variable to print out the user defined objects (Line 6)
-pt1 = linkurl.json()['1402']
-pt2 = linkurl.json()['1414']
-pt3 = linkurl.json()['1424']
-print(pt1,pt2,pt3)
+#1GB Selectors
+name_1411 = jsonparse['1411']['name']
+hasstock_1411 = jsonparse['1411']['hasStock']
 
-#user input to exit
-input("Press enter to quit")
+name_1413 = jsonparse['1413']['name']
+hasstock_1413 = jsonparse['1413']['hasStock']
+
+name_1423 = jsonparse['1423']['name']
+hasstock_1423 = jsonparse['1423']['hasStock']
+
+#2GB Selectors
+name_1402 = jsonparse['1402']['name']
+hasstock_1402 = jsonparse['1402']['hasStock']
+
+name_1414 = jsonparse['1414']['name']
+hasstock_1414 = jsonparse['1414']['hasStock']
+
+name_1424 = jsonparse['1424']['name']
+hasstock_1424 = jsonparse['1424']['hasStock']
+
+print("1GB")
+print(name_1411,hasstock_1411)
+print(name_1413,hasstock_1413)
+print(name_1423,hasstock_1423)
+print("\n")
+print("2GB")
+print(name_1402,hasstock_1402)
+print(name_1414,hasstock_1414)
+print(name_1424,hasstock_1424)
