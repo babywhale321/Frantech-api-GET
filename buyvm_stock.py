@@ -23,6 +23,10 @@ name_1423 = jsonparse['1423']['name']
 hasstock_1423 = jsonparse['1423']['hasStock']
 quantity_1423 = jsonparse['1423']['quantity']
 
+name_1501 = jsonparse['1501']['name']
+hasstock_1501 = jsonparse['1501']['hasStock']
+quantity_1501 = jsonparse['1501']['quantity']
+
 #2GB Selectors
 name_1402 = jsonparse['1402']['name']
 hasstock_1402 = jsonparse['1402']['hasStock']
@@ -36,6 +40,10 @@ name_1424 = jsonparse['1424']['name']
 hasstock_1424 = jsonparse['1424']['hasStock']
 quantity_1424 = jsonparse['1424']['quantity']
 
+name_1502 = jsonparse['1502']['name']
+hasstock_1502 = jsonparse['1502']['hasStock']
+quantity_1502 = jsonparse['1502']['quantity']
+
 #prints the selectors
 #name is the location/size
 #hasstock is true or false if its in stock
@@ -44,10 +52,12 @@ print("1GB Ram")
 print(name_1411,"Stock?",hasstock_1411,"Quantity?",quantity_1411)
 print(name_1413,"Stock?",hasstock_1413,"Quantity?",quantity_1413)
 print(name_1423,"Stock?",hasstock_1423,"Quantity?",quantity_1423)
+print(name_1501,"Stock?",hasstock_1501,"Quantity?",quantity_1501)
 print("\n")
 print("2GB Ram")
 print(name_1402,"Stock?",hasstock_1402,"Quantity?",quantity_1402)
 print(name_1414,"Stock?",hasstock_1414,"Quantity?",quantity_1414)
 print(name_1424,"Stock?",hasstock_1424,"Quantity?",quantity_1424)
+print(name_1502,"Stock?",hasstock_1502,"Quantity?",quantity_1502)
 print("\n")
 input("Press enter to quit")
