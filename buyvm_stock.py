@@ -37,15 +37,17 @@ hasstock_1424 = jsonparse['1424']['hasStock']
 quantity_1424 = jsonparse['1424']['quantity']
 
 #prints the selectors
-#name is the location/size and hasstock is true or false
+#name is the location/size
+#hasstock is true or false if its in stock
+#quantity is how many are available
 print("1GB Ram")
-print(name_1411,"Stock?",hasstock_1411,"Quanity?",quantity_1411)
-print(name_1413,"Stock?",hasstock_1413,"Quanity?",quantity_1413)
-print(name_1423,"Stock?",hasstock_1423,"Quanity?",quantity_1423)
+print(name_1411,"Stock?",hasstock_1411,"Quantity?",quantity_1411)
+print(name_1413,"Stock?",hasstock_1413,"Quantity?",quantity_1413)
+print(name_1423,"Stock?",hasstock_1423,"Quantity?",quantity_1423)
 print("\n")
 print("2GB Ram")
-print(name_1402,"Stock?",hasstock_1402,"Quanity?",quantity_1402)
-print(name_1414,"Stock?",hasstock_1414,"Quanity?",quantity_1414)
-print(name_1424,"Stock?",hasstock_1424,"Quanity?",quantity_1424)
+print(name_1402,"Stock?",hasstock_1402,"Quantity?",quantity_1402)
+print(name_1414,"Stock?",hasstock_1414,"Quantity?",quantity_1414)
+print(name_1424,"Stock?",hasstock_1424,"Quantity?",quantity_1424)
 print("\n")
 input("Press enter to quit")
