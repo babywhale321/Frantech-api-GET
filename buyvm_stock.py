@@ -27,11 +27,11 @@ while True:
         print(name_vps,"Is there stock?",hasstock_vps,"Whats the quantity?",quantity_vps)
         
         #typing 'restart' will restart the program or type anything else will exit the program 
-        restart_var = input("Press enter to quit or type the word 'restart' to start over\n")
-        if restart_var == 'restart': 
-            continue
-        else : 
+        restart_var = input("Press enter to restart or type the word 'exit' to exit the program\n")
+        if restart_var == 'exit': 
             break
+        else : 
+            continue
     
     #If that fails then it will give some syntax and an option to restart but if they type 'exit' the program exits
     except:
@@ -39,3 +39,5 @@ while True:
         ask_var = input("Press enter to restart or type the word 'exit' to exit the program\n")
         if ask_var == 'exit':
             break
+        else :
+            continue
